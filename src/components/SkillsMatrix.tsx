@@ -116,7 +116,9 @@ const SkillsMatrix: React.FC<SkillsMatrixProps> = ({ skills }) => {
                 "Git": "git",
                 "GitHub Copilot": "github",
                 "n8n AI Automation": "n8n",
-                "Ethical Hacking": "https://pentesthacker.wordpress.com/wp-content/uploads/2020/12/artboard-3-100.jpg?w=1024"
+                "Ethical Hacking": "https://pentesthacker.wordpress.com/wp-content/uploads/2020/12/artboard-3-100.jpg?w=1024",
+                "Akamai": "https://e7.pngegg.com/pngimages/375/681/png-clipart-logo-akamai-technologies-content-delivery-network-font-brand-technology-firm-blue-text.png",
+                "Cloudflare": "https://miro.medium.com/v2/0*VkJT7OxqPFNNts18.png"
               };
               const val = mapping[name];
               if (!val) return null;

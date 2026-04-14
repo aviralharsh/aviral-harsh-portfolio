@@ -111,25 +111,6 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({ experiences }) 
                           </motion.li>
                         ))}
                       </ul>
-
-                      {/* Impact Metrics */}
-                      <div className="flex flex-wrap gap-3 ml-9">
-                        {role.bullets
-                          .filter((b) => b.includes("%") || b.includes("×") || b.includes(">") || b.includes("~"))
-                          .map((b, i) => {
-                            const metricMatch = b.match(/(\d+%|\d+×|>\d+%|~\d+%)/);
-                            return metricMatch ? (
-                              <motion.div 
-                                key={i} 
-                                whileHover={{ scale: 1.05, y: -2 }}
-                                className="flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[9px] rounded-xl font-black uppercase tracking-[0.2em]"
-                              >
-                                <Sparkles size={10} className="animate-pulse" />
-                                {metricMatch[0]} Efficiency
-                              </motion.div>
-                            ) : null;
-                          })}
-                      </div>
                     </div>
                   ))}
                 </div>

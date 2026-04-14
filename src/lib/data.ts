@@ -6,6 +6,7 @@ export const basics = {
   "email": "aviralharsh05@gmail.com",
   "phone": "7397430455",
   "summary": "DevOps Engineer with 5+ years of experience architecting and automating scalable, secure infrastructure across AWS, GCP, and OCI. Proven track record of reducing infrastructure provisioning time by up to 80% and improving deployment consistency in high-availability, production-grade environments. Experienced in implementing and managing AI-driven automation workflows and integrating MLOps practices within DevOps ecosystems.",
+  "image": "/src/assets/profile.png",
   "links": [
     { "label": "LinkedIn", "url": "https://www.linkedin.com/in/aviral-harsh-557481152" },
     { "label": "GitHub", "url": "https://github.com/aviralharsh" },
@@ -57,7 +58,7 @@ export const experience = [
         ]
       },
       {
-        "role": "DevOps Engineer I",
+        "role": "DevOps Engineer",
         "date": "July 2022 – December 2024",
         "bullets": [
           "Configured Cloudflare as a global CDN and WAF replacement, improving latency by ~30% and reducing ingress traffic load by 40%.",
@@ -116,7 +117,7 @@ export const skills = {
     { "name": "CI/CD", "level": 4, "desc": "Jenkins, GoCD, ArgoCD, Groovy pipelines" }
   ],
   "additional": [
-    "Python", "Shell Scripting", "Linux (Servers & Containers)", "Istio Service Mesh", "Karpenter", "Teleport", "ELK Logging (ElasticSearch, Fluentd, Kibana)", "Git", "GitHub Copilot", "n8n AI Automation", "Ethical Hacking"
+    "Python", "Shell Scripting", "Linux (Servers & Containers)", "Istio Service Mesh", "Karpenter", "Teleport", "ELK Logging (ElasticSearch, Fluentd, Kibana)", "Git", "GitHub Copilot", "n8n AI Automation", "Ethical Hacking", "Akamai", "Cloudflare"
   ]
 };
 
@@ -145,6 +146,18 @@ export const education = [
     "school": "Delhi Public School",
     "date": "2014 – 2015",
     "details": "Completed secondary education"
+  }
+];
+
+export const achievements = [
+  {
+    "title": "Global Ethical Hacking Leaderboard",
+    "rank": "3rd Position",
+    "organization": "EC-Council",
+    "date": "January 2021",
+    "description": "Ranked 3rd globally in the EC-Council Global Ethical Hacking Leaderboard, demonstrating elite proficiency in cybersecurity and ethical hacking.",
+    "image": "https://www.eccouncil.org/wp-content/uploads/2023/03/2021-January-Leaderboard.jpg",
+    "link": "https://www.eccouncil.org/ec-council-in-news/indian-hackers-blaze-the-path-to-make-india-a-more-cyber-secure-nation/#:~:text=Aviral%20Harsh"
   }
 ];
 

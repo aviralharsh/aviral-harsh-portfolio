@@ -1,5 +1,5 @@
 import React from "react";
-import { basics, experience, topImpact, skills, education, certifications } from "./lib/data";
+import { basics, experience, topImpact, skills, education, certifications, achievements } from "./lib/data";
 import AnimatedBackground from "./components/AnimatedBackground";
 import Splash from "./components/Splash";
 import Hero from "./components/Hero";
@@ -7,6 +7,7 @@ import ImpactStrip from "./components/ImpactStrip";
 import ExperienceTimeline from "./components/ExperienceTimeline";
 import SkillsMatrix from "./components/SkillsMatrix";
 import EducationCertGrid from "./components/EducationCertGrid";
+import Achievements from "./components/Achievements";
 
 export default function App() {
   return (
@@ -21,15 +22,22 @@ export default function App() {
           <ImpactStrip items={topImpact} />
         </section>
 
+        <section id="achievements" className="py-20 scroll-mt-20">
+          <h2 className="text-3xl md:text-5xl font-bold mb-16 pb-2 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            Global Recognition
+          </h2>
+          <Achievements achievements={achievements} />
+        </section>
+
         <section id="experience" className="py-20 scroll-mt-20">
-          <h2 className="text-3xl md:text-5xl font-bold mb-16 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-5xl font-bold mb-16 pb-2 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
             Professional Experience
           </h2>
           <ExperienceTimeline experiences={experience} />
         </section>
 
         <section id="skills" className="py-20 scroll-mt-20">
-          <h2 className="text-3xl md:text-5xl font-bold mb-16 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-5xl font-bold mb-16 pb-2 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
             Technical Proficiency
           </h2>
           <SkillsMatrix skills={skills} />
